@@ -1,0 +1,20 @@
+className="group grop-hover:bg-red-200"/>
+===============================================================================
+<link href="/about">about</link> 
+===const router=useRouter()
+===router.asPath() ====>/about
+================================================================================
+1)))download svg instgram icon
+2))) go to react.svgr.com/playground and copy code of svg instgram icon to convert to react code
+===============================================================================
+<Link download={true}>Resume</Link>
+new Date().getFullYear()
+space==>&nbsp;
+copy right ===>&copy;
+heart ===>&hearts;===>&#9852;
+===========================================================================
+canva.com ==> make image
+erase.bg ==> to remove background
+adobe express ==> convert it to svg
+===========================================================================
+className="animate-spin"
