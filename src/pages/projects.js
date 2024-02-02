@@ -5,14 +5,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import one from '../../public/images/projects/one.jpg'
 import { GithubIcon, YouTubeIcon } from '@/components/Icons'
+import {motion} from 'framer-motion'
 const projects = () =>{
+    const FramerImage=motion(Image);
     const FeaturedProjects = ({img,linkUrl,titleProject,summaryProject,githubUrl}) =>{
         return(
             <article className="relative w-full flex items-center bg-light shadow-2xl border border-solid border-black rounded-3xl p-12">
                 <div className="absolute top-0 -right-3 w-[101%] h-[103%] rounded-[2.5rem] bg-dark  -z-10 border-2 border-solid border-dark" />
                 {/* left side */}
                 <Link href={linkUrl} className="w-1/2 rounded-lg cursor-pointer overflow-hidden" target="_blank" >
-                   <Image src={img} className="w-full h-auto"/>
+                   <FramerImage src={img} className="w-full h-auto" whileHover={{scale:1.2}} transition={{duration:0.2}}/>
                 </Link>
                 {/* right side */}
                 <div className="w-1/2 flex flex-col pl-6 justify-between items-start">
@@ -38,7 +40,7 @@ const projects = () =>{
         <article className="relative flex flex-col border border-solid border-dark rounded-3xl p-8 bg-light items-center justify-center">
             <div className="absolute top-0 -right-3 w-[101%] h-[103%] rounded-[2rem] bg-dark -z-10 border-2 border-solid border-dark"/>
             <Link href={linkUrl} className="w-full rounded-lg cursor-pointer overflow-hidden"  target="_blank" >
-               <Image src={img} className="w-full h-full"/>
+               <FramerImage src={img} className="w-full h-full" whileHover={{scale:1.2}} transition={{duration:0.2}} />
             </Link>
             <div className="flex flex-col w-full mt-4">
                 {/* elem one */}
